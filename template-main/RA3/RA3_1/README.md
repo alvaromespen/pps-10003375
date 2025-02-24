@@ -1,6 +1,6 @@
 # RA3_1
 
-Introduction [INTRO](URL_TASKS) :
+Introduction [INTRO](https://github.com/alvaromespen/pps-10003375/tree/main/template-main/RA3) :
 
 # Tasks
 
