@@ -28,15 +28,7 @@ Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el s
 
    ![XSS bloqueado](./Assets/7.png)
 
-4. **Prueba de acceso bloqueado:**
-   
-   ![Acceso bloqueado](./Assets/8.png)
-
-5. **Prueba de carga con Apache Benchmark:**
-   
-   ![Apache Benchmark](./Assets/9.png)
-
-6. **Sitio web con Apache seguro cargado en el navegador:**
+4. **Sitio web con Apache seguro cargado en el navegador:**
     
    ![Apache seguro](./Assets/5.png)
 
