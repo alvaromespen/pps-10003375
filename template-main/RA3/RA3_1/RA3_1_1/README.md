@@ -84,3 +84,85 @@ La respuesta debería ser un código **403 Forbidden**, indicando que el ataque 
 ## Conclusión
 
 Este proyecto proporciona un entorno seguro para aplicaciones web mediante la implementación de un **WAF con ModSecurity** en Apache. Bloquea ataques comunes como **XSS, SQL Injection y CSRF**, protegiendo la infraestructura web sin modificar la aplicación en sí.
+
+# 3.1.1. Práctica 3 : OWASP
+
+# Práctica 3: Instalación de Apache con Reglas OWASP para mod_security
+
+## Descripción
+En esta práctica, instalaremos Apache con las reglas OWASP para mod_security y comprobaremos su funcionamiento. Posteriormente, crearemos una imagen de Docker que automatice la instalación y configuración de estas reglas.
+
+## Instalación de las Reglas OWASP
+OWASP proporciona una configuración por defecto que incluye protección contra las amenazas más comunes. La mejor estrategia es comenzar con este conjunto de reglas y luego personalizarlo según las necesidades del servidor.
+
+### [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/OWASP/Dockerfile)
+En este caso el DockerFile no incluye configuraciones, ya que en un principio construí la imagen usando la imagen de la práctica 2, no obtante, tras realizar muchas configuraciones debido a errores con la implementación de OWASP, y al final conseguir que funcionara a la perfección, no supe solucionar el Dockerfile para generar un Dockerfile bien escrito, por lo que hice un commit de es contenedor y subí la imagen.
+
+### Pasos para la instalación
+1. **Instalar mod_security2**
+   ```bash
+   sudo apt update
+   sudo apt install libapache2-mod-security2 -y
+   ```
+
+2. **Clonar el repositorio de OWASP ModSecurity CRS**
+   ```bash
+   git clone https://github.com/SpiderLabs/owasp-modsecurity-crs.git
+   ```
+
+3. **Mover el archivo de configuración a la ruta correcta**
+   ```bash
+   cd owasp-modsecurity-crs
+   sudo mv crs-setup.conf.example /etc/modsecurity/crs-setup.conf
+   ```
+
+4. **Mover las reglas al directorio de configuración de mod_security**
+   ```bash
+   sudo mv rules/ /etc/modsecurity
+   ```
+   Si aparece algún error, ejecuta:
+   ```bash
+   sudo mkdir /etc/modsecurity/rules
+   cd rules
+   sudo cp *.* /etc/modsecurity/rules
+   ```
+
+5. **Verificar que las reglas estén cargadas en `security2.conf`**
+   ```bash
+   sudo nano /etc/apache2/mods-enabled/security2.conf
+   ```
+   Asegúrate de que el contenido incluye:
+   ```apache
+   <IfModule security2_module>
+       SecDataDir /var/cache/modsecurity
+       SecRuleEngine On
+       IncludeOptional /etc/modsecurity/*.conf
+       Include /etc/modsecurity/rules/*.conf
+   </IfModule>
+   ```
+
+6. **Configurar una regla personalizada**
+   Edita el archivo de configuración del host virtual:
+   ```bash
+   sudo nano /etc/apache2/sites-available/000-default.conf
+   ```
+   Añade la siguiente regla:
+   ```apache
+   SecRuleEngine On
+   SecRule ARGS:testparam "@contains test" "id:1234,deny,status:403,msg:'Cazado por Ciberseguridad'"
+   ```
+
+7. **Reiniciar Apache**
+   ```bash
+   sudo systemctl restart apache2
+   ```
+
+## Pruebas de funcionamiento
+
+Ejecuta el siguiente comando para verificar que la regla bloquea la petición:
+
+![Petición bloqueada](./Assets/8.png)
+
+Si la configuración es correcta, recibirás la respuesta HTTP 403 Forbidden:
+
+
