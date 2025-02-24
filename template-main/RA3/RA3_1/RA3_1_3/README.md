@@ -21,7 +21,7 @@ Las siguientes configuraciones han sido implementadas en el Dockerfile:
 Las siguientes pruebas fueron realizadas para verificar las configuraciones de seguridad:
 
 - **Redirección forzada a HTTPS**
-  ![Redirección HTTPS](./Apache_Hardening_Best_Practices/10.png)
+  ![Redirección HTTPS](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_3/Apache%20_Hardening%20_Best%20_Practices/10.png)
 
 - **Métodos HTTP restringidos (DELETE y PUT)**
   ![Métodos HTTP restringidos](./mnt/data/11.png)
