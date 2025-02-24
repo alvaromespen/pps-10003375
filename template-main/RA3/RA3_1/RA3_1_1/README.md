@@ -69,28 +69,4 @@ Header set Content-Security-Policy \
   "default-src 'self'; img-src *; media-src media1.com media2.com; script-src userscripts.example.com"
 ```
 
-## Cómo Usarlo
-
-1. **Construir la imagen Docker:**
-
-   ```bash
-   docker build -t apache-secure .
-   ```
-
-2. **Ejecutar el contenedor:**
-
-   ```bash
-   docker run -p 80:80 -p 443:443 -d apache-secure
-   ```
-
-3. **Verificar que el servidor está funcionando:**
-
-   ```bash
-   curl -I https://localhost --insecure
-   ```
-
-## Conclusión
-
-Este proyecto proporciona una configuración segura para servidores Apache en contenedores Docker. Implementa buenas prácticas de seguridad, como la protección contra XSS y la restricción de contenido externo mediante CSP. También mejora la seguridad con HSTS y evita la exposición de directorios mediante la desactivación de `autoindex`.
-
-
+# 3.1.1. Práctica 2 : Web Application Firewall
