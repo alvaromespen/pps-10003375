@@ -17,21 +17,21 @@ Este proyecto proporciona un contenedor Docker basado en Ubuntu con Apache confi
 Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el servidor Apache:
 
 1. **Apache en ejecución:**
-   ![Dockerfile en ejecución](./Assets/2.png)
+   ![Dockerfile en ejecución: ](./Assets/2.png)
 
-2. **Cabeceras HTTP configuradas correctamente:**
+3. **Cabeceras HTTP configuradas correctamente:**
    ![Cabeceras HTTP](./mnt/data/6.png)
 
-3. **Prueba de seguridad XSS bloqueada:**
+4. **Prueba de seguridad XSS bloqueada:**
    ![XSS bloqueado](./mnt/data/7.png)
 
-4. **Prueba de acceso bloqueado:**
+5. **Prueba de acceso bloqueado:**
    ![Acceso bloqueado](./mnt/data/8.png)
 
-5. **Prueba de carga con Apache Benchmark:**
+6. **Prueba de carga con Apache Benchmark:**
    ![Apache Benchmark](./mnt/data/9.png)
 
-6. **Sitio web con Apache seguro cargado en el navegador:**
+7. **Sitio web con Apache seguro cargado en el navegador:**
    ![Apache seguro](./mnt/data/5.png)
 
 ## Seguridad en Apache
