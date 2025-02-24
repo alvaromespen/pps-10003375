@@ -4,7 +4,7 @@ Este proyecto proporciona un contenedor Docker basado en Ubuntu con Apache confi
 
 ## Características del Proyecto
 
-- **Deshabilitación del módulo `autoindex`** para evitar la exposición no deseada de archivos y directorios.
+- **Deshabilitación del módulo `autoindex` para evitar la exposición no deseada de archivos y directorios.
 - **Habilitación de HSTS (HTTP Strict Transport Security)** para forzar el uso de HTTPS.
 - **Configuración de Content Security Policy (CSP)** para mitigar ataques XSS.
 - **Uso de certificados SSL** para asegurar la comunicación HTTPS.
