@@ -10,7 +10,7 @@ Este proyecto proporciona un contenedor Docker basado en Ubuntu con Apache confi
 - **Uso de certificados SSL** para asegurar la comunicación HTTPS.
 - **Exposición de los puertos 80 y 443** para tráfico HTTP y HTTPS.
 
-## [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/Apache-CSP/Dockerfile)
+### [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/Apache-CSP/Dockerfile)
 
 ## Capturas de Pantalla
 
@@ -69,7 +69,7 @@ Este práctica implementa un **Web Application Firewall (WAF)** utilizando **Mod
 - **Configuración de Apache con seguridad mejorada**.
 - **Pruebas de funcionalidad con intentos de XSS bloqueados**.
 
-## [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/Web%20Application%20Firewall/Dockerfile)
+### [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/Web%20Application%20Firewall/Dockerfile)
 
 ## Capturas de Pantalla
 
