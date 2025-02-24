@@ -165,7 +165,7 @@ Ejecuta el siguiente comando para verificar que la regla bloquea la petición:
 
 Si la configuración es correcta, recibirás la respuesta HTTP 403 Forbidden:
 
-# 3.1.4. Práctica 1 : Evitar ataques DDOS
+# 3.1.4. Práctica 4 : Evitar ataques DDOS
 
 ## Descripción
 En esta práctica instalaremos Apache con el módulo `mod_evasive`, el cual ayuda a mitigar ataques de denegación de servicio (DoS). Además, crearemos una imagen Docker que automatice la instalación y configuración del módulo. Toda esta configuración está en el Dockerfile.
@@ -177,4 +177,4 @@ Para realizar las pruebas vamos a ejecutar el siguiente comando, el cuál sto si
 
 ![Evitar ataques DDOS](./Assets/9.png)
 
-Como podemos observar solo ha acpetado las 12 primeras peticiones y ha rechazado todas las demás.
+Como podemos observar solo ha acpetado las 18 primeras peticiones y ha rechazado todas las demás.
