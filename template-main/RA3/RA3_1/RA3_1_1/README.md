@@ -58,3 +58,29 @@ Header set Content-Security-Policy \
 ```
 
 # 3.1.1. Práctica 2 : Web Application Firewall
+
+Este práctica implementa un **Web Application Firewall (WAF)** utilizando **ModSecurity** en un servidor Apache dentro de un contenedor Docker. Se encarga de filtrar y bloquear tráfico malicioso en aplicaciones web.
+
+## Características del Proyecto
+
+- **Implementación de ModSecurity** como WAF para protección contra ataques web.
+- **Bloqueo de inyecciones SQL, XSS y CSRF**.
+- **Uso de reglas básicas de seguridad del OWASP ModSecurity Core Rule Set (CRS)**.
+- **Configuración de Apache con seguridad mejorada**.
+- **Pruebas de funcionalidad con intentos de XSS bloqueados**.
+
+## [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/Web%20Application%20Firewall/Dockerfile)
+
+## Capturas de Pantalla
+
+Aquí puedes ver ejemplos de la configuración y pruebas de ModSecurity en acción:
+
+1. **Intento de ataque XSS bloqueado:**
+   
+   ![XSS bloqueado](./Assets/7.png)
+
+La respuesta debería ser un código **403 Forbidden**, indicando que el ataque ha sido bloqueado.
+
+## Conclusión
+
+Este proyecto proporciona un entorno seguro para aplicaciones web mediante la implementación de un **WAF con ModSecurity** en Apache. Bloquea ataques comunes como **XSS, SQL Injection y CSRF**, protegiendo la infraestructura web sin modificar la aplicación en sí.
