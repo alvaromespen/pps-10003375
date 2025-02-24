@@ -87,8 +87,6 @@ Este proyecto proporciona un entorno seguro para aplicaciones web mediante la im
 
 # 3.1.1. Práctica 3 : OWASP
 
-# Práctica 3: Instalación de Apache con Reglas OWASP para mod_security
-
 ## Descripción
 En esta práctica, instalaremos Apache con las reglas OWASP para mod_security y comprobaremos su funcionamiento. Posteriormente, crearemos una imagen de Docker que automatice la instalación y configuración de estas reglas.
 
