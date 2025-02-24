@@ -25,29 +25,19 @@ Las siguientes pruebas fueron realizadas para verificar las configuraciones de s
   ![Redirección HTTPS](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_3/Apache%20_Hardening%20_Best%20_Practices/10.png)
 
 - **Métodos HTTP restringidos (DELETE y PUT)**
-  ![Métodos HTTP restringidos](./mnt/data/11.png)
+  
+  ![Métodos HTTP restringidos](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_3/Apache%20_Hardening%20_Best%20_Practices/11.png)
 
 - **Verificación de ejecución con usuario apache**
-  ![Ejecución usuario Apache](./mnt/data/12.png)
+  
+  ![Ejecución usuario Apache](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_3/Apache%20_Hardening%20_Best%20_Practices/12.png)
 
 - **Método TRACE deshabilitado**
-  ![Método TRACE deshabilitado](./mnt/data/13.png)
+  
+  ![Método TRACE deshabilitado](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_3/Apache%20_Hardening%20_Best%20_Practices/13.png)
 
-## 🏗 Construcción y Ejecución del Contenedor
 
-Para construir y ejecutar el contenedor con Apache endurecido, sigue estos pasos:
+## Referencias
 
-```sh
-# Construir la imagen
-docker build -t apache-secure .
-
-# Ejecutar el contenedor
-docker run -d -p 80:80 -p 443:443 --name apache-secure apache-secure
-```
-
-## 📖 Referencias
-
-Para más información sobre prácticas de seguridad en Apache, consulta el siguiente artículo:
-
-🔗 [Best Practices for Securing Apache Web Server](https://geekflare.com/cybersecurity/apache-web-server-hardening-security/)
+- [Best Practices for Securing Apache Web Server](https://geekflare.com/cybersecurity/apache-web-server-hardening-security/)
 
