@@ -20,19 +20,20 @@ Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el s
 ![Dockerfile en ejecución: ](./Assets/2.png)
 
 
-3. **Cabeceras HTTP configuradas correctamente:**
-   ![Cabeceras HTTP](./mnt/data/6.png)
+2. **Cabeceras HTTP configuradas correctamente:**
+   ![Cabeceras HTTP](./Assets/6.png)
 
-4. **Prueba de seguridad XSS bloqueada:**
-   ![XSS bloqueado](./mnt/data/7.png)
+5. **Prueba de seguridad XSS bloqueada:**
 
-5. **Prueba de acceso bloqueado:**
+   ![XSS bloqueado](./Assets/7.png)
+
+7. **Prueba de acceso bloqueado:**
    ![Acceso bloqueado](./mnt/data/8.png)
 
-6. **Prueba de carga con Apache Benchmark:**
+8. **Prueba de carga con Apache Benchmark:**
    ![Apache Benchmark](./mnt/data/9.png)
 
-7. **Sitio web con Apache seguro cargado en el navegador:**
+9. **Sitio web con Apache seguro cargado en el navegador:**
    ![Apache seguro](./mnt/data/5.png)
 
 ## Seguridad en Apache
