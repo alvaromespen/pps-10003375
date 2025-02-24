@@ -8,25 +8,8 @@ Para poder acceder a nuestras imagenes en DockerHub, accederemos al siguiente en
 
 - [Imagenes de DockerHUB](https://hub.docker.com/u/pps10003375)
 
-# Tasks
+# Prácticas
 
-* [TASK_1](#URL_TASK_1): XXX
-* [TASK_2](#URL_TASK_2): XXX
-
-# Task_1
-
-Intro...
-
-![IMG](URL_IMG)
-
-Example code:
-
-```
-$ git clone https://github.com/openssh/openssh-portable
-$ patch -p1 < ~/path/to/openssh.patch
-$ autoreconf
-$ ./configure
-$ make
-```
-
-# Task_2
+* [3.1. Apache Hardening](https://github.com/alvaromespen/pps-10003375/tree/main/template-main/RA3/RA3_1/RA3_1_1)
+* [3.2. Certificados](https://github.com/alvaromespen/pps-10003375/tree/main/template-main/RA3/RA3_1/RA3_1_2)
+* [3.1.3. Apache Hardening Best Practices](https://github.com/alvaromespen/pps-10003375/tree/main/template-main/RA3/RA3_1/RA3_1_3)
