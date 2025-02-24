@@ -24,11 +24,7 @@ Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el s
 
    ![Cabeceras HTTP](./Assets/6.png)
 
-3. **Prueba de seguridad XSS bloqueada:**
-
-   ![XSS bloqueado](./Assets/7.png)
-
-4. **Sitio web con Apache seguro cargado en el navegador:**
+3. **Sitio web con Apache seguro cargado en el navegador:**
     
    ![Apache seguro](./Assets/5.png)
 
