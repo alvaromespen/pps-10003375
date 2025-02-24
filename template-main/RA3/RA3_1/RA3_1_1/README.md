@@ -17,7 +17,7 @@ Este proyecto proporciona un contenedor Docker basado en Ubuntu con Apache confi
 Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el servidor Apache:
 
 1. **Apache en ejecución:**
-   ![Dockerfile en ejecución]([./mnt/data/2.png](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/2.png))
+   ![Dockerfile en ejecución]([./mnt/data/2.png](template-main/RA3/RA3_1/RA3_1_1/Assets/2.png)
 
 2. **Cabeceras HTTP configuradas correctamente:**
    ![Cabeceras HTTP](./mnt/data/6.png)
