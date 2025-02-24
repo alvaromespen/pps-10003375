@@ -18,8 +18,7 @@ Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el s
 
 1. **Apache en ejecución:**
 
-![Dockerfile en ejecución: ](./Assets/2.png)
-
+   ![Dockerfile en ejecución: ](./Assets/2.png)
 
 2. **Cabeceras HTTP configuradas correctamente:**
 
