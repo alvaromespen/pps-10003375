@@ -1,8 +1,8 @@
-# Dockerfile para Apache Seguro
+# 3.1.1. Práctica 1 : CSP
 
 Este proyecto proporciona un contenedor Docker basado en Ubuntu con Apache configurado de manera segura, incluyendo medidas de seguridad como la desactivación del módulo autoindex, configuración de cabeceras HTTP seguras y certificados SSL.
 
-## Características del Proyecto
+## Características de la práctica 1
 
 - **Deshabilitación del módulo autoindex para evitar la exposición no deseada de archivos y directorios.
 - **Habilitación de HSTS (HTTP Strict Transport Security)** para forzar el uso de HTTPS.
@@ -10,48 +10,13 @@ Este proyecto proporciona un contenedor Docker basado en Ubuntu con Apache confi
 - **Uso de certificados SSL** para asegurar la comunicación HTTPS.
 - **Exposición de los puertos 80 y 443** para tráfico HTTP y HTTPS.
 
-## Configuración del Dockerfile
-
-```dockerfile
-# Imagen de Ubuntu
-FROM ubuntu:latest
-
-# Actualizaciones e instalaciones necesarias
-RUN apt-get update && apt-get -y install apache2 nano ssl-cert
-RUN a2enmod ssl && a2enmod headers
-
-# Copia de los ficheros necesarios
-COPY apachesec.html /var/www/html
-COPY www.apache.sec.conf /etc/apache2/sites-available/
-
-# Copia de certificados
-COPY apache.crt /etc/apache2/ssl/apache.crt
-COPY apache.key /etc/apache2/ssl/apache.key
-
-# Configuración del sitio
-COPY www.sslapache.sec.conf /etc/apache2/sites-available/
-RUN a2ensite www.sslapache.sec.conf
-
-# Deshabilitar el módulo autoindex
-RUN a2dismod -f autoindex
-
-# Habilitar CSP
-RUN echo "Header set Content-Security-Policy \"default-src 'self'; img-src *; media-src media1.com media2.com; script-src userscripts.example.com\"" >> /etc/apache2/conf-available/security.conf
-RUN a2enconf security
-
-# Exposición de los puertos 80 y 443
-EXPOSE 80
-EXPOSE 443
-
-# Inicio del servicio Apache en primer plano
-CMD ["apachectl", "-D", "FOREGROUND"]
-```
+## [Configuración del Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_1/RA3_1_1/Assets/Apache-CSP/Dockerfile)
 
 ## Capturas de Pantalla
 
 Aquí puedes ver ejemplos de las configuraciones aplicadas y sus efectos en el servidor Apache:
 
-1. **Dockerfile en ejecución:**
+1. **Apache en ejecución:**
    ![Dockerfile en ejecución](./mnt/data/2.png)
 
 2. **Cabeceras HTTP configuradas correctamente:**
