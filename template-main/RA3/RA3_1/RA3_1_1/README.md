@@ -50,7 +50,7 @@ La cabecera `Strict-Transport-Security` se configura para reforzar el uso de HTT
 
 ### Configurar Content Security Policy (CSP)
 
-Se define una política CSP para restringir la carga de contenido desde orígenes específicos.
+Definimos una política CSP para restringir la carga de contenido desde orígenes específicos.
 
 ```apache
 Header set Content-Security-Policy \ 
@@ -59,7 +59,7 @@ Header set Content-Security-Policy \
 
 # 3.1.1. Práctica 2 : Web Application Firewall
 
-Este práctica implementa un **Web Application Firewall (WAF)** utilizando **ModSecurity** en un servidor Apache dentro de un contenedor Docker. Se encarga de filtrar y bloquear tráfico malicioso en aplicaciones web.
+En esta práctica implementamos un **Web Application Firewall (WAF)** utilizando **ModSecurity** en un servidor Apache dentro de un contenedor Docker. Se encarga de filtrar y bloquear tráfico malicioso en aplicaciones web.
 
 ## Características del Proyecto
 
@@ -103,7 +103,7 @@ En este caso el DockerFile no incluye configuraciones, ya que en un principio co
    sudo apt install libapache2-mod-security2 -y
    ```
 
-2. **Clonar el repositorio de OWASP ModSecurity CRS**
+2. **Clonación del repositorio de OWASP ModSecurity CRS**
    ```bash
    git clone https://github.com/SpiderLabs/owasp-modsecurity-crs.git
    ```
@@ -118,7 +118,7 @@ En este caso el DockerFile no incluye configuraciones, ya que en un principio co
    ```bash
    sudo mv rules/ /etc/modsecurity
    ```
-   Si aparece algún error, ejecuta:
+   Si aparece algún error, ejecutamos:
    ```bash
    sudo mkdir /etc/modsecurity/rules
    cd rules
@@ -139,7 +139,7 @@ En este caso el DockerFile no incluye configuraciones, ya que en un principio co
    </IfModule>
    ```
 
-6. **Configurar una regla personalizada**
+6. **Configuración de una regla personalizada**
    Edita el archivo de configuración del host virtual:
    ```bash
    sudo nano /etc/apache2/sites-available/000-default.conf
