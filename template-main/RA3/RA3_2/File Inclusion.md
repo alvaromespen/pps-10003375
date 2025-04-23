@@ -16,6 +16,6 @@ En este caso existen una serie de cambios, con esta dificultad el servidor filtr
 
 ![image](https://github.com/user-attachments/assets/356c2cbc-0099-483d-b48e-bddc1676f969)
 
-No obstante, este no es un gran problema, ya que podemos *bypassearlo* haciendo uso de un payload de path traversal.
+No obstante, este no es un gran problema, ya que podemos *bypassearlo* haciendo uso de un payload de path traversal, vulnerabilidad que permite a un atacante acceder a archivos o directorios fuera del directorio raíz permitido por la aplicación web.
 
 ![H](./Assets/File%20Inclusion/HIGH%20-%201.png)
