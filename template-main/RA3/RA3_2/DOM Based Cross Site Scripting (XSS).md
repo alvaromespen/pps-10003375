@@ -8,3 +8,6 @@ En este caso, la página tiene una funcionalidad que permite seleccionar un idio
 
 **Explotación de dificultad Low:**
 
+Para poder realizar la explotación con esta dificultad, tenemos que modificar la URL, quitando el English y pasando el paylaod siguiente: <script>alert(document.cookie);</script> obteniendo así el valor de las cookies.
+
+![L](./Assets/DOM%20Based%20Cross%20Site%20Scripting%20(XSS)/LOW%20-%202.png)
