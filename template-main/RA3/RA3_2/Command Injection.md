@@ -16,4 +16,4 @@ Para esta dificultad hemos hecho uso del ; ya que se usa como un delimitador par
 
 A continuación vamos a realizar la explotación en medium, en este caso, separar los comandos con ; ya no funciona, no obstante, realizando pruebas vemos que haciendo uso de *pipelines* la ejecución remota de comandos funciona a la perfección.
 
-![PING en Medium](./Assets/Command%20Injection/MEDIUM%20-%20.png)
+![PING en Medium](./Assets/Command%20Injection/MEDIUM%20-%201.png)
