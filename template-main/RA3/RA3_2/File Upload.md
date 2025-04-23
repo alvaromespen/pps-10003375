@@ -8,4 +8,4 @@ En este caso, lo primero que tenemos que hacer es crear nuestro script en php pa
 
 El script que hemos creado es el siguiente:
 
-![SC](./Assets/File%20Upload/LOW%20-%201.png)
+![SC](./Assets/File%20Upload/LOW%20-%201.PNG)
