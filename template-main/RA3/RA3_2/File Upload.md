@@ -17,4 +17,4 @@ Una vez con el script creado vamos a poner nuestro equipo en escucha en el puert
 Tras esto, vamos a subir el fichero al servidor desde la página web, y ejecutaremos el php haciendo uso de curl, obteniendo así acceso remoto a los comandos a través de una reverse shell.
 
 ![SC](./Assets/File%20Upload/LOW%20-%203.png)
-![SC](./Assets/File%20Upload/LOW%20-%204.png)
+![SC](./Assets/File%20Upload/LOW%20-%204.PNG)
