@@ -11,3 +11,9 @@ Haciendo uso de esa funcionalidad podemos hacer introducir comandos concatenados
 Para esta dificultad hemos hecho uso del ; ya que se usa como un delimitador para separar comandos, por lo que primero se ejecutará el ping y tras eso se ejecutará el comando establecido, en este caso, whoami.
 
 ![PING en Low](./Assets/Command%20Injection/LOW%20-%201.png)
+
+**Explotación de dificultad Medium:**
+
+A continuación vamos a realizar la explotación en medium, en este caso, separar los comandos con ; ya no funciona, no obstante, realizando pruebas vemos que haciendo uso de *pipelines* la ejecución remota de comandos funciona a la perfección.
+
+![PING en Medium](./Assets/Command%20Injection/MEDIUM%20-%20.png)
