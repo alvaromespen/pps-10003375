@@ -14,7 +14,7 @@ Esta vulnerabilidad existe ya que en la página web se está cargando un fichero
 
 En este caso existen una serie de cambios, con esta dificultad el servidor filtra los archivos que pueden ser incluidos, por lo que solo mostrará archivos cuyo nombre empiece con file. 
 
-![image](https://github.com/user-attachments/assets/5ea3bb26-a464-40aa-a808-e48e05546a4d)
+![image](https://github.com/user-attachments/assets/356c2cbc-0099-483d-b48e-bddc1676f969)
 
 No obstante, este no es un gran problema, ya que podemos *bypassearlo* haciendo uso de un payload de path traversal.
 
