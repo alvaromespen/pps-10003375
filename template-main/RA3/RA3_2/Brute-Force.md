@@ -6,4 +6,4 @@ El objetivo de esta práctica es realizar un ataque de fuerza bruta a una págin
 
 Para proceder lo primero que necesitamos para poder ejecutar el ataque de fuerza bruta con hydra es obtener el SESSIONSID, esto lo podemos obtener haciendo uso de inspeccionar en los Storage --> headers.
 
-![SID](template-main/RA3/RA3_2/Assets/Brute Force/LOW - 1.png)
+![SID](./Assets/Brute%20Force/LOW%20-%201.png)
