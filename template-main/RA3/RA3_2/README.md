@@ -12,4 +12,4 @@ A continuación veremos como hemos explotado las vulnerabilidades basadas en un 
 * [Command Injection](https://github.com/alvaromespen/pps-10003375/blob/254637cc626411b4de138f1dc8275bfe0bfa9cef/template-main/RA3/RA3_2/Command%20Injection.md)
 * [CSRF](https://github.com/alvaromespen/pps-10003375/blob/254637cc626411b4de138f1dc8275bfe0bfa9cef/template-main/RA3/RA3_2/CSRF.md)
 * [File Inclusion](https://github.com/alvaromespen/pps-10003375/tree/254637cc626411b4de138f1dc8275bfe0bfa9cef/template-main/RA3/RA3_2)
-* [File Upload](https://github.com/alvaromespen/pps-10003375/blob/254637cc626411b4de138f1dc8275bfe0bfa9cef/template-main/RA3/RA3_2/File%20Upload.md)
+* [File Upload](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA3/RA3_2/File%20Upload.md)
