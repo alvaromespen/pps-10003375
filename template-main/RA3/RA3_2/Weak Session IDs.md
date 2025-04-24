@@ -21,3 +21,5 @@ En este nivel, el ID de sesión se genera usando la función time();, que devuel
 ![M1](./Assets/Weak%20Session%20ID/MEDIUM%20-%201.png)
 
 En este caso, sigue siendo predecible si un atacante sabe o estima la hora exacta en la que un usuario se conectó. También se puede automatizar la prueba de rangos de timestamps cercanos.
+
+Para esta ocasión podríamos volver a modificar las cookies y obtener acceso de nuevo a dicha sesión sin que nos pida iniciar sesión de nuevo.
