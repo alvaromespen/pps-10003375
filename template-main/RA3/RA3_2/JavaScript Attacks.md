@@ -22,3 +22,18 @@ Token --> 38581812b435834ebf84ebcc2c6424d6
 
 ![L1](./Assets/JavaScript%20Attacks/LOW%20-%201.png)
 ![L2](./Assets/JavaScript%20Attacks/LOW%20-%202.png)
+![L3](./Assets/JavaScript%20Attacks/LOW%20-%203.png)
+
+Y vemos el mensaje de Well Done con el que completamos dicho reto.
+
+**Explotación de dificultad Medium:**
+
+En este nivel de dificultad, el servidor utiliza una estrategia para generar un token que depende de la inversión de la cadena phrase. El valor del token tiene un patrón claro: se forma con “XX” + el valor invertido de phrase + “XX”.
+
+Por lo que en este caso volvemos a modificar el token invirtiendo la palabra success junto con las XX.
+
+![M1](./Assets/JavaScript%20Attacks/MEDIUM%20-%201.png)
+
+Y al enviar de nuevo el formulario con success volvemos a obtener el mensaje de Well Done.
+
+![M2](./Assets/JavaScript%20Attacks/MEDIUM%20-%202.png)
