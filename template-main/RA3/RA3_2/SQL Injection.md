@@ -15,3 +15,12 @@ Para obtener todas las contraseñas de cada usuario ejecutamos el siguiente payl
 ```
 
 ![L2](./Assets/SQL%20Injection/LOW%20-%202.png)
+
+**Explotación de dificultad Medium:**
+
+En este nivel de dificultad ya no se utilizan métodos GET sino que se utilizan métodos POST, además de que las comillas están filtradas, por lo que no podemos ejecutar el mismo payload, no obstante, se puede introducir el parámetro ID por lo que haciendo uso del siguiente payload podemos obtener las credenciales.
+
+Por lo que si cambiamos desde DevTools el valor del campo que hace referencia a la ID 1, y ejecutamos la consulta de la ID 1 obtenemos toda la información que queríamos.
+
+![M1](./Assets/SQL%20Injection/MEDIUM%20-%201.png)
+![M2](./Assets/SQL%20Injection/MEDIUM%20-%202.png)
