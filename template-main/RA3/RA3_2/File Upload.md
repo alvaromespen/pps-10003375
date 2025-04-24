@@ -18,3 +18,9 @@ Tras esto, vamos a subir el fichero al servidor desde la página web, y ejecutar
 
 ![SC](./Assets/File%20Upload/LOW%20-%203.png)
 ![SC](./Assets/File%20Upload/LOW%20-%204.PNG)
+
+**Explotación de dificultad Medium:**
+
+![image](https://github.com/user-attachments/assets/ca64edf2-f727-4d2c-9277-f1421dba421a)
+
+![image](https://github.com/user-attachments/assets/bebc74d2-058c-44d2-8d2c-d16ebac5ad71)
