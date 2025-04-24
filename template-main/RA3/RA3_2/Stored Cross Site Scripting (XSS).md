@@ -28,7 +28,7 @@ En este nivel de dificultad, el campo message esta más protegido frente a paylo
 
 ![M1](./Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/MEDIUM%20-%201.png)
 
-Una vez modificado el valor de dicho atributo podemos introducir todo el siguiente paylaod, que en este caso ya no podemos hacer uso del mismo, por lo que usamos el siguiente:
+Una vez modificado el valor de dicho atributo podemos introducir todo el siguiente paylaod, que en este caso ya no hacemos uso del mismo, por lo que usamos el siguiente:
 
 ```html
 payload=<sCrIpT>alert(document.cookie);</ScRiPt>
@@ -38,4 +38,17 @@ En este caso, mezclamos mayúsculas y minúsculas para evitar filtros de palabra
 
 ![M2](./Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/MEDIUM%20-%202.png)
 
-![M3](.Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/MEDIUM%20-%203.png)
+![M3](./Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/MEDIUM%20-%203.png)
+
+
+**Explotación de dificultad High:**
+
+En este nivel de dificultad, el servidor implementa una validación mucho más estricta para evitar ataques XSS, por lo que se filtran directamente etiquetas como <script> o palabras clave comunes asociadas a payloads maliciosos.
+
+Para explotar esta vulnerabilidad volvemos de hacer uso del payload de img. No obstante, en este caso introducimos los valores con mayúsculas y minúsculas para volver a intentar evitar filtros, y activamos el evento de que en caso de que de error devuelve el valor de las cookies a través del *document.cookie*.
+
+También es necesario modificar el valor del parámetro maxlength.
+
+![H1](./Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/HIGH%20-%201.png)
+
+![H2](./Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/HIGH%20-%202.png)
