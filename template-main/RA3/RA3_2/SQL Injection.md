@@ -1,4 +1,4 @@
-#SQL Injection
+# SQL Injection
 
 A continuación veremos como explotar la vulnerabilidad de SQL Injection, la cuál es una vulnerabilidad crítica que permite a un atacante interferir con las consultas SQL que una aplicación envía a su base de datos. Mediante esta técnica, se pueden obtener, modificar o incluso eliminar datos sin autorización.
 
