@@ -20,7 +20,7 @@ Este payload, como sabemos de anteriormente, lo que realiza es que crea una etiq
 
 Introducimos el payload en este caso en el campo de Message, y al enviarlo obtenemos el valor de las cookies.
 
-![L2](.Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/LOW%20-%202.png)
+![L2](./Assets/Stored%20Cross%20Site%20Scripting%20(XSS)/LOW%20-%202.png)
 
 **Explotación de dificultad Medium:**
 
