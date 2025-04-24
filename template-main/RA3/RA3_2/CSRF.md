@@ -8,7 +8,7 @@ En este nivel de dificultad, la funcionalidad de cambio de contraseña no cuenta
 
 El payload que hemos utilizado es un código que crea una página web que, al ser visitada, envía automáticamente una solicitud para cambiar la contraseña de un usuario en la aplicación vulnerable DVWA, que está corriendo localmente en http://127.0.0.1/vulnerabilities/csrf/. Como el formulario contiene campos ocultos con una nueva contraseña (pass) y se autoenvía con JavaScript (document.forms[0].submit()), si el usuario está autenticado en DVWA en el momento de visitar esta página, su navegador enviará la petición con sus cookies de sesión, y la contraseña será cambiada sin su consentimiento.
 
-![L1](./Assets/CSRF/LOW%20-%201.png)
+![image](https://github.com/user-attachments/assets/2eebd45f-f3a5-40bf-b34d-57583874960a)
 
 Para poder simular esto de manera rápida hacemos uso de python, donde gracias a él nos conectamos a un servidor y accedemos al fichero html que hemos creado, y deberíamos ver este output, en la máquina que aloja el servidor http.
 
