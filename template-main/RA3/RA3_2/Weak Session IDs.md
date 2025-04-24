@@ -1,6 +1,6 @@
 # Weak Session IDs
 
-Las IDs de sesión son valores que permiten identificar de forma única a un usuario autenticado en una aplicación web. Si estas IDs son predecibles, un atacante puede secuestrar sesiones activas y obtener acceso no autorizado. Por lo que a continuación veremos funciones de como se generan ciertas IDs y como modificamos nuestro valor de cookies para acceder.
+Las IDs de sesión son valores que permiten identificar de forma única a un usuario autenticado en una aplicación web. Si estas IDs son predecibles, podríamos secuestrar sesiones activas y obtener acceso no autorizado. Por lo que a continuación veremos funciones de como se generan ciertas IDs y como podríamos modificar nuestro ID de Sesión para acceder.
 
 **Explotación de dificultad Low:**
 
