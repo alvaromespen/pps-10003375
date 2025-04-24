@@ -10,7 +10,19 @@ El payload que hemos utilizado es un código que crea una página web que, al se
 
 ![L1](./Assets/CSRF/LOW%20-%201.png)
 
-Para poder simular esto de manera rápida hacemos uso de python y nos conectamos a un servidor web en el puerto 8000 y accedemos al fichero html que hemos creado, y deberíamos ver este output, en la máquina que aloja el servidor http.
+Para poder simular esto de manera rápida hacemos uso de python, donde gracias a él nos conectamos a un servidor y accedemos al fichero html que hemos creado, y deberíamos ver este output, en la máquina que aloja el servidor http.
 
 ![L2](./Assets/CSRF/LOW%20-%201.5.png)
 ![L3](./Assets/CSRF/LOW%20-%202.png)
+
+**Explotación de dificultad Medium:**
+
+En este nivel, el servidor verifica que la petición sea externa, si es así impide que se realice la petición directamente, por lo que vamos a introducir un payload.php dentro del propio servidor vulnerable.
+
+Para ello lo primero que hacemos es cambiar la extensión de .html que hemos utilizado anteriormente a .php, y una vez cambiado accedemos a DVWA, donde modificamos la dificultad a low momentáneamente para hacer uso de la vulnerabilidad de subida de archivos y subimos el csrf.php.
+
+![M1](./Assets/CSRF/MEDIUM%20-%202.png)
+
+Tras eso accedemos a la URL donde se almacena el php y veremos el siguiente mensaje, que una vez aceptado se cambiará la contraseña.
+
+![M2](./Assets/CSRF/MEDIUM%20-%203.png)
