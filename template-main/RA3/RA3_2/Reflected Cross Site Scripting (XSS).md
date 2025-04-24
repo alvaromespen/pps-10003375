@@ -14,6 +14,8 @@ Por lo que si en la casilla de Name introducimos el siguiente payload:
 payload=<img src=x onerror="alert(document.cookie)">
 ```
 
+Este payload lo que realiza es que crea una etiqueta de imagen con un src inválido (la imagen no se puede cargar), lo que provoca un error. Aprovechando esto, se usa el atributo onerror para ejecutar el código alert(document.cookie), que muestra una ventana emergente con las cookies del usuario.
+
 Podemos obtener el valor de las cookies y lo visualizaremos por pantalla.
 
 ![L](./Assets/Reflected%20Cross%20Site%20Scripting%20(XSS)/LOW%20-%202.png)
