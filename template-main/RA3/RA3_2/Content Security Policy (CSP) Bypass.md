@@ -12,3 +12,23 @@ En este caso, seguiremos ejecutando payloads para poder obtener el valor de las 
 
 ![L1](./Assets/Content%20Security%20Policy%20(CSP)%20Bypass/LOW%20-%201.png)
 ![L2](./Assets/Content%20Security%20Policy%20(CSP)%20Bypass/LOW%20-%202.png)
+
+**Explotación de dificultad Medium:**
+
+En este nivel de dificultad, el servidor implementa una política CSP que usa un nonce (número aleatorio temporal) para autorizar solo los scripts con ese valor específico. Sin el nonce correcto, el navegador bloquea el script.
+
+En este caso, la política CSP se ve más robusta, no obstante, el nonce es estático, lo que nos permite reutilizar el proporcionado para ejecutar el script de alerta que nos proporcionará el valor de las cookies.
+
+El nonce es el siguiente: "TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA="
+
+Una manera de obtener el nonce es desde DevTools en la pestaña de Network --> accedemos a un paquete y en la cabecera podemos encontrar el apartado de CSP donde veremos el Nonce.
+
+![M1](./Assets/Content%20Security%20Policy%20(CSP)%20Bypass/MEDIUM%20-%201.png)
+
+Y una vez con el Nonce ejecutamos el siguiente paylaod:
+
+```html
+payload=<script nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA=">alert(document.cookie)</script>
+```
+
+![M2](./Assets/Content%20Security%20Policy%20(CSP)%20Bypass/MEDIUM%20-%202.png)
