@@ -12,5 +12,5 @@ El payload que hemos utilizado es un código que crea una página web que, al se
 
 Para poder simular esto de manera rápida hacemos uso de python y nos conectamos a un servidor web en el puerto 8000 y accedemos al fichero html que hemos creado, y deberíamos ver este output, en la máquina que aloja el servidor http.
 
-![L2](./Assets/CSRF/LOW%20-%202.png)
-![L3](./Assets/CSRF/LOW%20-%203.png)
+![L2](./Assets/CSRF/LOW%20-%201.5.png)
+![L3](./Assets/CSRF/LOW%20-%202.png)
