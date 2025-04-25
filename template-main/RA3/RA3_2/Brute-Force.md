@@ -8,6 +8,8 @@ Para proceder lo primero que necesitamos para poder ejecutar el ataque de fuerza
 
 ![SID](./Assets/Brute%20Force/LOW%20-%201.png)
 
+En esta captura donde vemos el valor de las cookies, podemos ver que la dificultad está en Impossible, por lo que la tenemos que cambiar a Low antes de proseguir.
+
 Una vez con esta información obtenida podemos proceder a ejecutar el ataque de fuerza bruta con Hydra
 
 ![Ataque](./Assets/Brute%20Force/LOW%20-%202.PNG)
