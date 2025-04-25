@@ -17,3 +17,9 @@ Para esta dificultad hemos hecho uso del ; ya que se usa como un delimitador par
 A continuación vamos a realizar la explotación en medium, en este caso, separar los comandos con ; ya no funciona, no obstante, realizando pruebas vemos que haciendo uso de *pipelines* la ejecución remota de comandos funciona a la perfección.
 
 ![PING en Medium](./Assets/Command%20Injection/MEDIUM%20-%202.png)
+
+**Explotación de dificultad High:**
+
+En esta parte los comandos anteriores, haciendo uso de primero realizar el ping y tras eso concatenar un segundo comando que es el que queríamos ejecutar en la máquina que contiene el servidor ya no funciona, por lo que simplemente podemos ejecutar "|whoami" y así se ejecuta este comando remoto. Este método también sirve para los otros niveles de dificultad, asi hemos podido ver diferentes maneras de ejecutar comandos remotos a través de hacer uso de ping.
+
+![image](https://github.com/user-attachments/assets/9b417e27-3aef-465e-9a58-47e272538830)
