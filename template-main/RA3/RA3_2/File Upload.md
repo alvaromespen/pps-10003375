@@ -21,6 +21,10 @@ Tras esto, vamos a subir el fichero al servidor desde la página web, y ejecutar
 
 **Explotación de dificultad Medium:**
 
+En este nivel de dificultad, ya no acepta archivos .php, por lo que hemos realizado una copia del código anterior, renombrandolo con un .png al final, una vez hecho eso nos dará un bloqueo de subida, por lo que si accedemos a las DevTools y vamos a la pestaña de Network y le damos click derecho en la petición y seleccionamos *Edit and Resend* podemos modificar el Content-Type a image/png, y tras eso podremos subirlo.
+
 ![image](https://github.com/user-attachments/assets/ca64edf2-f727-4d2c-9277-f1421dba421a)
+
+Una vez con el archivo
 
 ![image](https://github.com/user-attachments/assets/bebc74d2-058c-44d2-8d2c-d16ebac5ad71)
