@@ -24,3 +24,13 @@ Por lo que si cambiamos desde DevTools el valor del campo que hace referencia a 
 
 ![M1](./Assets/SQL%20Injection/MEDIUM%20-%201.png)
 ![M2](./Assets/SQL%20Injection/MEDIUM%20-%202.png)
+
+**Explotación de dificultad High:**
+
+Para la dificultad High podemos volver a aplicar el payload usado en el nivel Low, y de esa manera obtenemos el resultado de nuevo.
+
+```html
+' UNION SELECT user, password FROM users#
+```
+
+![image](https://github.com/user-attachments/assets/c14d588f-0873-48ce-8b6e-f63c7a24742e)
