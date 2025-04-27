@@ -18,3 +18,28 @@ La ejecución del comando Hydra realiza un ataque de fuerza bruta por diccionari
 
 La razón por la que vemos diferentes contraseñas válidas se debe a que Hydra fue capaz de probar una combinación de usuario y contraseñas en cada intento y mostró aquellas que no causaron el mensaje de error "Username and/or password incorrect.". 
 Esto quiere decir que es probable que 15 de las 16 contraseñas sean falsos positivos que pertenecen al diccionario rockyou.txt
+
+**Explotación de dificultad High:**
+
+Debdio a que el ataque de fuerza bruta en dificultad media decia que tardaba 32 horas en ejecutarse, hemos decidido realizar la dificultad High haciendo uso de un código de python.
+
+
+En este nivel, el sistema implementa varias medidas de seguridad para protegerse contra ataques de fuerza bruta, como la validación de tokens CSRFy el uso de cookies para autenticación de sesión. 
+
+Sin embargo, aún es posible realizar un ataque de fuerza bruta utilizando herramientas y técnicas avanzadas, como la extracción del user_token para completar la autenticación.
+
+En este caso hemos hecho uso del siguiente script de Python para automatizar la tarea de obtener los credenciales.
+
+![H1](./Assets/Brute%20Force/HIGH%20-%201.PNG)
+
+Lo que realiza este script es lo siguiente:
+
+- El script primero obtiene el valor del parámetro user_token de la página de inicio de sesión (esto es necesario para evitar ataques CSRF). Luego, recorre las contraseñas del diccionario rockyou.txt y las prueba para ver si alguna de ellas otorga acceso al sistema.
+
+En nuestro caso, hemos modificado la URL para que fuera la correcta, además, también hemos introducido nuestra PHPSESSID, y finalmente hemos utilizado un diccionario más pequeño basado en las primeras 1000 contraseñas de rockyou.txt obtenido de la siguiente manera.
+
+![H0](./Assets/Brute%20Force/HIGH%20-%200.PNG)
+
+Finalmente, hemos ejecutado el script de python y hemos obtenido el siguiente output con la contraseña obtenida.
+
+![H2](./Assets/Brute%20Force/HIGH%20-%202.PNG)
