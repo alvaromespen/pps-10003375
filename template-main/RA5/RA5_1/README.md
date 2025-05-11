@@ -38,6 +38,23 @@ Estructura del proyecto:
 | `Dockerfile`         | Define la imagen del contenedor para ejecutar la aplicación.   |
 | `Jenkinsfile`        | Especifica la pipeline declarativa para Jenkins.               |
 
-Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación, y también hemos tenido que configurar ngrok para utilizarlo en github, ya que este no resuelve direcciones privadas haciendo uso de webhook, por lo que lo hemos configurado y nos ha especificado la siguiente dirección:
+Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación, en este docker, hemos tenido que realizar la instalación de python, ya que no iba por defecto, y también hemos tenido que configurar ngrok para utilizarlo en github, ya que este no resuelve direcciones privadas haciendo uso de webhook.
 
-[I7](./Assets/7.png)
+Para proceder con Jenkins tenemos que crear un nuevo proyecto y especificar que sea de tipo Pipeline, y tras eso introduciremos los siguientes datos en el apartado de Repositories:
+
+- Repository URL: https://github.com/alvaromespen/pps-10003375.git
+- Branch Specifier: */main
+- Script path: template-main/RA5/RA5_1/Jenkinsfile
+
+Tras esto procederemos con la configuración de Github, donde ngrok nos proporciona una URL que hace referencia a nuestro localhost en el puerto 8080 como el de Jenkins:
+
+![I7](./Assets/7.png)
+
+Por lo que usaremos la URL de Forwarding para configurar el Webhook de github:
+
+![I8](./Assets/8.png)
+
+Una vez configurado el github y Jenkins, vamos a realizar un git clone de nuestro repositorio, en el cuál vamos a modificar el README.md para que se active la pipeline de forma automática y veamos los resultados en Jenkins.
+
+![I8-9](./Assets/8-9.png)
+![I9](./Assets/9.png)
