@@ -26,3 +26,21 @@ En estas dos siguientes imágenes, vemos como funciona a la perfección las prue
 ![image](https://github.com/user-attachments/assets/8b95dbcb-8348-49cc-ab7f-74452e769169)
 
 # Parte 1 - Tarea 2: Creación de la canalización de la CI con Jenkinsfile:
+
+El objetivo de esta parte es diseñar e implementar una canalización (pipeline) de integración continua para un proyecto en Python mediante Jenkins. Se busca automatizar el proceso de pruebas del código ante cada cambio en el repositorio, validando su correcto funcionamiento y garantizando una mayor fiabilidad en el desarrollo.
+
+Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación
+
+🧪 Estructura del proyecto
+calculadora/
+├── calculator.py
+├── test_calculator.py
+├── Dockerfile
+└── Jenkinsfile
+calculator.py: Contiene la lógica principal de la calculadora.
+
+test_calculator.py: Incluye pruebas unitarias usando unittest.
+
+Dockerfile: Define la imagen del contenedor.
+
+Jenkinsfile: Define la pipeline declarativa.
