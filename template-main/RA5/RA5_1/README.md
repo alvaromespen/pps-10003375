@@ -84,3 +84,24 @@ La estructura del proyecto en esta parte es la siguiente:
 | `docker-compose.yml` | Orquesta los servicios necesarios para la ejecución de la aplicación.         |
 | `Jenkinsfile`        | Especifica la pipeline declarativa de integración continua básica.            |
 | `Jenkinsfile.docker` | Define la pipeline que se ejecuta en entorno Docker e integra Docker Compose. |
+
+Los enlaces a los nuevos ficheros creados son los siguientes:
+
+- [Docker-compose.yml](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_1/docker-compose.yml)
+- [Jenkinsfile.docker](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_1/Jenkinsfile.docker)
+
+En este caso, hemos tenido que instar tanto Docker como docker-compose en nuestro docker, ya que no nos dejaba realizar las pruebas sin ellos, además hemos tenido que ejecutar el docker run de la siguiente manera para que pudieramos usar dockers dentro de nuestro docker, usando como base una imagen del docker que estabamos utilizando anteriormente.
+
+![image](https://github.com/user-attachments/assets/49e43893-de43-4dc9-bc8f-106f3d883a5e)
+
+Una vez con este nuevo docker corriendo, volvemos a Jenkins y creamos una nueva pipeline, con la siguiente configuración, donde especificamos que ahora usaremos Jenkinsfile.docker.
+
+![I11](./Assets/11.png)
+
+Usando la misma configuración que en el anterior apartado, pero en este caso, configurando el Jenkinsfile.docker, veremos que si ahora reaizamos un cambio en nuestro README.md, en este caso, lo vamos a realizar desde github directamente, veremos que se activa de forma automática.
+
+![I14](./Assets/14.png)
+
+![I15](./Assets/15.png)
+
+Y vemos que se ha ejecutado de forma automática, donde el cambio hecho ha sido un update en el README.md, y mostrando date en nuestra terminal verificamos que correspone con los minutos y segunods, ya que en el docker que hemos instalado en primera instancia la hora iba dos horas atrasadas a la de nuestra zona horaria.
