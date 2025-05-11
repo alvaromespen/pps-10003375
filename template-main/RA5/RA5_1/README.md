@@ -66,6 +66,10 @@ Una vez configurado el github y Jenkins, vamos a realizar un git clone de nuestr
 
 Como podemos observar se ha lanzado de manera automática y ha detectado también el commit, ya que como se ve en la salida de la última imagen se ve el mensaje que habíamos especificado con el -m.
 
+En esta imagen, si accedemos en Jenkins a la parte de mostrar por consola, vemos que al final devuelve Success.
+
+![I6](./Assets/6.png)
+
 Y también si accedemos al webhook de github, vemos que nos dice que el último push ha sido exitoso.
 
 ![I10](./Assets/10.png)
