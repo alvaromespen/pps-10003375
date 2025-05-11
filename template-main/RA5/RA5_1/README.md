@@ -38,6 +38,11 @@ Estructura del proyecto:
 | `Dockerfile`         | Define la imagen del contenedor para ejecutar la aplicación.   |
 | `Jenkinsfile`        | Especifica la pipeline declarativa para Jenkins.               |
 
+Si se desea echar un vistazo tanto al Jenkinsfile como al Dockerfile a continuación están unos enlaces directos.
+
+- [Jenkinsfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_1/Jenkinsfile)
+- [Dockerfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_1/Dockerfile)
+
 Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación, en este docker, hemos tenido que realizar la instalación de python, ya que no iba por defecto, y también hemos tenido que configurar ngrok para utilizarlo en github, ya que este no resuelve direcciones privadas haciendo uso de webhook.
 
 Para proceder con Jenkins tenemos que crear un nuevo proyecto y especificar que sea de tipo Pipeline, y tras eso introduciremos los siguientes datos en el apartado de Repositories:
@@ -66,3 +71,16 @@ Y también si accedemos al webhook de github, vemos que nos dice que el último 
 ![I10](./Assets/10.png)
 
 # Parte 2: Creación de la canalización de la CI con Jenkinsfile.docker:
+
+En esta parte de la práctica, hemos diseñado una pipeline declarativa en Jenkins utilizando un fichero específico llamado Jenkinsfile.docker. Esta pipeline tiene como objetivo automatizar el ciclo completo de CI del proyecto de calculadora en un entorno Docker.
+
+La estructura del proyecto en esta parte es la siguiente:
+
+| Archivo              | Descripción                                                                   |
+| -------------------- | ----------------------------------------------------------------------------- |
+| `calculadora.py`      | Contiene la lógica principal de la calculadora.                               |
+| `test_calculator.py` | Incluye las pruebas unitarias utilizando el módulo unittest.                |
+| `Dockerfile`         | Define la imagen del contenedor para ejecutar la aplicación.                  |
+| `docker-compose.yml` | Orquesta los servicios necesarios para la ejecución de la aplicación.         |
+| `Jenkinsfile`        | Especifica la pipeline declarativa de integración continua básica.            |
+| `Jenkinsfile.docker` | Define la pipeline que se ejecuta en entorno Docker e integra Docker Compose. |
