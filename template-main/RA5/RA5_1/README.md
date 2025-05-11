@@ -31,16 +31,12 @@ El objetivo de esta parte es diseñar e implementar una canalización (pipeline)
 
 Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación
 
-🧪 Estructura del proyecto
-calculadora/
-├── calculator.py
-├── test_calculator.py
-├── Dockerfile
-└── Jenkinsfile
-calculator.py: Contiene la lógica principal de la calculadora.
+Estructura del proyecto:
 
-test_calculator.py: Incluye pruebas unitarias usando unittest.
+| Archivo              | Descripción                                                    |
+| -------------------- | -------------------------------------------------------------- |
+| `calculator.py`      | Contiene la lógica principal de la calculadora.                |
+| `test_calculator.py` | Incluye las pruebas unitarias utilizando el módulo unittest. |
+| `Dockerfile`         | Define la imagen del contenedor para ejecutar la aplicación.   |
+| `Jenkinsfile`        | Especifica la pipeline declarativa para Jenkins.               |
 
-Dockerfile: Define la imagen del contenedor.
-
-Jenkinsfile: Define la pipeline declarativa.
