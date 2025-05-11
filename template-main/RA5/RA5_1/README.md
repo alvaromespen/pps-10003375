@@ -109,3 +109,9 @@ Usando la misma configuración que en el anterior apartado, pero en este caso, c
 ![I15](./Assets/15.png)
 
 Y vemos que se ha ejecutado de forma automática, donde el cambio hecho ha sido un update en el README.md, y mostrando date en nuestra terminal verificamos que correspone con los minutos y segunods, ya que en el docker que hemos instalado en primera instancia la hora iba dos horas atrasadas a la de nuestra zona horaria.
+
+# Conclusión
+
+Este proyecto demuestra cómo se puede construir una canalización completa de integración continua (CI) para un proyecto Python mediante herramientas open-source como Jenkins, Docker y Docker Compose. A través del uso de un Jenkinsfile declarativo, se automatizan tareas clave como la construcción de contenedores, la ejecución de pruebas unitarias y el despliegue temporal del entorno.
+
+Gracias a la integración con GitHub, cada cambio en el repositorio activa automáticamente la ejecución de la pipeline, lo que garantiza una validación constante del código y mejora la calidad del desarrollo.
