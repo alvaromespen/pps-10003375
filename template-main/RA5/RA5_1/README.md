@@ -33,7 +33,7 @@ Estructura del proyecto:
 
 | Archivo              | Descripción                                                    |
 | -------------------- | -------------------------------------------------------------- |
-| `calculator.py`      | Contiene la lógica principal de la calculadora.                |
+| `calculadora.py`      | Contiene la lógica principal de la calculadora.                |
 | `test_calculator.py` | Incluye las pruebas unitarias utilizando el módulo unittest. |
 | `Dockerfile`         | Define la imagen del contenedor para ejecutar la aplicación.   |
 | `Jenkinsfile`        | Especifica la pipeline declarativa para Jenkins.               |
@@ -58,3 +58,11 @@ Una vez configurado el github y Jenkins, vamos a realizar un git clone de nuestr
 
 ![I8-9](./Assets/8-9.png)
 ![I9](./Assets/9.png)
+
+Como podemos observar se ha lanzado de manera automática y ha detectado también el commit, ya que como se ve en la salida de la última imagen se ve el mensaje que habíamos especificado con el -m.
+
+Y también si accedemos al webhook de github, vemos que nos dice que el último push ha sido exitoso.
+
+![I10](./Assets/10.png)
+
+# Parte 2: Creación de la canalización de la CI con Jenkinsfile.docker:
