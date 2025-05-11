@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar repo') {
             steps {
-                git 'https://github.com/alvaromespen/pps-10003375.git'
+                git branch: 'main', url: 'https://github.com/alvaromespen/pps-10003375.git'
             }
         }
 
