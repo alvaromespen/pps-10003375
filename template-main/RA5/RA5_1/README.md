@@ -29,8 +29,6 @@ En estas dos siguientes imágenes, vemos como funciona a la perfección las prue
 
 El objetivo de esta parte es diseñar e implementar una canalización (pipeline) de integración continua para un proyecto en Python mediante Jenkins. Se busca automatizar el proceso de pruebas del código ante cada cambio en el repositorio, validando su correcto funcionamiento y garantizando una mayor fiabilidad en el desarrollo.
 
-Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación
-
 Estructura del proyecto:
 
 | Archivo              | Descripción                                                    |
@@ -40,3 +38,6 @@ Estructura del proyecto:
 | `Dockerfile`         | Define la imagen del contenedor para ejecutar la aplicación.   |
 | `Jenkinsfile`        | Especifica la pipeline declarativa para Jenkins.               |
 
+Para esta parte de la práctica hemos descargado un docker con Jenkins para acelerar el proceso de instalación, y también hemos tenido que configurar ngrok para utilizarlo en github, ya que este no resuelve direcciones privadas haciendo uso de webhook, por lo que lo hemos configurado y nos ha especificado la siguiente dirección:
+
+[I7](./Assets/7.png)
