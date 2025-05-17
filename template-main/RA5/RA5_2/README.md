@@ -84,4 +84,6 @@ Una vez con todo lo anterior realizado, ya procedemos a realizar el último apar
 
 Tras eso, desde playbook.yml, indicamos que se reinicie el servicio apache2 para que se apliquen los cambios, y así habremos completado esta automatización de crear una VM con el servicio apache con contenido personalizado en su index.html.
 
+En este caso, ya que la VM ya está creada y simplemente hemos realizado unas modificaciones en el fichero playbook.yml, podemos hacer uso del comando vagrant provision, para que ejecute los contenidos añadidos a la VM como vemos a continuación.
+
 ![I7](./Assets/7.png)
