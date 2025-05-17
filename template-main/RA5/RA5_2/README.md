@@ -18,7 +18,7 @@ Vagrant es una herramienta que facilita la creación y gestión de entornos de d
 
 # Parte 1: Provisionar una máquina virtual Ubuntu 24.04 en Virtualbox mediante Terraform
 
-En esta parte tenemos que realizar solo la implementación de la VM para que se encuentre funcional y podamos acceder de manera remota con SSH, para ello hemos hecho uso de el fichero main.tf, el cuál lo único que hacer es decir que el proveedor se ejecutará de manera local, y lo que hará será llamar a vagrant up para que ejecute el fichero Vagrantfile y de esa manera se automatice la creación de la VM, los ficheros utilizados son los siguientes:
+En esta parte tenemos que realizar solo la implementación de la VM para que se encuentre funcional y podamos acceder de manera remota con SSH, para ello hemos hecho uso de el fichero main.tf, el cuál lo único que hacer es decir que el aprovisionador se ejecutará de manera local, y lo que hará será llamar a vagrant up para que ejecute el fichero Vagrantfile y de esa manera se automatice la creación de la VM, los ficheros utilizados son los siguientes:
 
 - [main.tf](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/main.tf)
 - [Vagrantfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/Vagrantfile)
@@ -34,3 +34,7 @@ Una vez con ambos ficheros creados, y en su directorio, vamos a inicializar el T
 Y como hemos podido observar, se ha creado la VM sin ningún problema, por lo que a continuación si hacemos uso del comando vagrant ssh, accedemos a dicha VM de manera remota.
 
 ![I4](./Assets/4.png)
+
+De esta manera, hemos podido completar esta primera parte, por lo que a continuación, ejecutaremos un `´vagrant destroy -f` lo que detendrá la VM y borrará todos sus datos, así podremos seguir con la siguiente parte, donde además de crear una VM, la actualizaremos y aprovisionaremos con un servidor apache.
+
+# Parte 2: Configurar actualización automática e implementación del servidor apache haciendo uso de Ansible.
