@@ -38,3 +38,24 @@ Y como hemos podido observar, se ha creado la VM sin ningún problema, por lo qu
 De esta manera, hemos podido completar esta primera parte, por lo que a continuación, ejecutaremos un `´vagrant destroy -f` lo que detendrá la VM y borrará todos sus datos, así podremos seguir con la siguiente parte, donde además de crear una VM, la actualizaremos y aprovisionaremos con un servidor apache.
 
 # Parte 2: Configurar actualización automática e implementación del servidor apache haciendo uso de Ansible.
+
+En este aparado, lo que haremos será que a través de Ansible, indicaremos que queremos que se actualicen los repositorios y los paquetes, además de que instalaremos el servidor Apache, para ello hacemos uso del fichero de Ansible llamado playbook.yml, y además ahora ya hacemos uso de todo el fichero de Vagrantfile, donde en el primer comentario, lo que hacemos es forzar la sincronización de carpetas compartidas para poder hacer uso del fichero .yml, ya que sino genera un error con los Guest Addition de VirtualBox, y tras eso, añadimos la configuración de que haremos uso del .yml, los ficheros utilizados son los dos mismos que antes, pero ahora con Ansible también.
+
+- [main.tf](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/main.tf)
+- [Vagrantfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/Vagrantfile)
+- [playbook.yml](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/playbook.yml)
+
+En este apartado, el fichero de playbook solo tenía de contenido hasta la instalación de apache, ya que el final del fichero es del útlimo apartado.
+
+Una vez con estos ficheros, podemos ejecutarlo de dos maneras, si queremos volver a ejecutar el terraform con el apply, debido a que este no se ejecutará si no se han realizado modificaciones en su fichero, podemos hacer una de las dos siguientes cosas que hemos planteado:
+
+**Opción 1:**
+
+En esta opción, lo que haremos será añadir un trigger al main.tf, el cuál sirve para forzar que se vuelva a ejecutar en cada terraform apply, aunque no haya ningún otro cambio en la configuración. EL trigger en cuestión es el siguiente:
+
+```hcl
+triggers = {
+  always_run = "${timestamp()}"
+}
+```
+
