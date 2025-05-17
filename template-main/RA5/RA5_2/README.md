@@ -24,3 +24,7 @@ Una vez con ambos ficheros creados, y en su directorio, vamos a inicializar el T
 ![I1](./Assets/1.png)
 ![I2](./Assets/2.png)
 ![I3](./Assets/3.png)
+
+Y como hemos podido observar, se ha creado la VM sin ningún problema, por lo que a continuación si hacemos uso del comando vagrant ssh, accedemos a dicha VM de manera remota.
+
+![I4](./Assets/4.png)
