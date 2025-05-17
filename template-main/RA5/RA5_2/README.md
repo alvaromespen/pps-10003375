@@ -10,6 +10,12 @@ No obstante, mientras desarrollábamos esta práctica, recibimos una serie de pr
 
 Vagrant es una herramienta que facilita la creación y gestión de entornos de desarrollo virtualizados. Se integra fácilmente con VirtualBox y otras plataformas, permitiendo levantar máquinas virtuales de manera automatizada y sencilla.
 
+# Requisitos 🏗️
+
+- VirtualBox instalado.
+- Vagrant instalado
+- Instalar Terraform y agregarlo a las variables de entorno del equipo. En windows (Abre el Panel de Control → Sistema → Configuración avanzada del sistema → Variables de entorno → “Path” → Editar → Agregar C:\Terraform.)
+
 # Parte 1: Provisionar una máquina virtual Ubuntu 24.04 en Virtualbox mediante Terraform
 
 En esta parte tenemos que realizar solo la implementación de la VM para que se encuentre funcional y podamos acceder de manera remota con SSH, para ello hemos hecho uso de el fichero main.tf, el cuál lo único que hacer es decir que el proveedor se ejecutará de manera local, y lo que hará será llamar a vagrant up para que ejecute el fichero Vagrantfile y de esa manera se automatice la creación de la VM, los ficheros utilizados son los siguientes:
