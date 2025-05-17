@@ -71,3 +71,17 @@ En este caso, hemos ejecutado manualmente el Vagrant up y vemos que se han ejecu
 
 ![I5](./Assets/5.png)
 ![I6](./Assets/6.png)
+
+Como podemos observar, se han completado las actualizaciones, y además, Apache ha sido instalado de manera correcta, ya que podemos ver con la opción -v su versión.
+
+# Parte 3: Configurar archivo index.html con Ansible.
+
+Una vez con todo lo anterior realizado, ya procedemos a realizar el último apartado, donde lo que hacemos es añadir las últimas dos acciones en Ansible, la primera de ellas, es crear un fichero index.html con el contenido *Ansible rocks*, que veremos cuando hagamos el curl de prueba para verificar su contenido, además, hemos modificado tanto el usuario propietario como el grupo al de apache (www-data), y hemos modificado los permisos de dicho directorio a 644, para aumentar dicha seguridad.
+
+- [main.tf](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/main.tf)
+- [Vagrantfile](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/Vagrantfile)
+- [playbook.yml](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_2/playbook.yml)
+
+Tras eso, desde playbook.yml, indicamos que se reinicie el servicio apache2 para que se apliquen los cambios, y así habremos completado esta automatización de crear una VM con el servicio apache con contenido personalizado en su index.html.
+
+![I7](./Assets/7.png)
