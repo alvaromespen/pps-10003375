@@ -87,3 +87,7 @@ Tras eso, desde playbook.yml, indicamos que se reinicie el servicio apache2 para
 En este caso, ya que la VM ya está creada y simplemente hemos realizado unas modificaciones en el fichero playbook.yml, podemos hacer uso del comando vagrant provision, para que ejecute los contenidos añadidos a la VM como vemos a continuación.
 
 ![I7](./Assets/7.png)
+
+# Conclusion
+
+Este proyecto demuestra cómo automatizar la provisión de entornos virtuales con herramientas modernas de Infraestructura como Código. A través de Terraform, Vagrant y Ansible, se consigue un entorno reproducible, documentado y funcional, ideal para desarrollo, pruebas o formación.
