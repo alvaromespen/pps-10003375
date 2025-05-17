@@ -59,3 +59,15 @@ triggers = {
 }
 ```
 
+Este funciona debido a su sintaxis de: ${timestamp()} evalúa el tiempo de ejecución, y genera una marca de tiempo nueva cada vez. Como el valor de always_run cambia en cada apply, Terraform lo interpreta como un cambio en el recurso, de esta manera podemos ejecutar siempre el terraform apply aunque no hayan habido cambios.
+
+**Opción 2:**
+
+La otra opción es ejecutar un vagrant up manualmente, que es el comando que utiliza terraform para llamar al Vagrantfile y que este automatice la creación de la VM.
+
+Ambas opciones son válidas, y hemos verificado que ambas funcionan sin ningún problema.
+
+En este caso, hemos ejecutado manualmente el Vagrant up y vemos que se han ejecutado las líneas del playbook.yml.
+
+![I5](./Assets/5.png)
+![I6](./Assets/6.png)
