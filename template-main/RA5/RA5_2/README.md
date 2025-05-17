@@ -35,7 +35,7 @@ Y como hemos podido observar, se ha creado la VM sin ningún problema, por lo qu
 
 ![I4](./Assets/4.png)
 
-De esta manera, hemos podido completar esta primera parte, por lo que a continuación, ejecutaremos un `´vagrant destroy -f` lo que detendrá la VM y borrará todos sus datos, así podremos seguir con la siguiente parte, donde además de crear una VM, la actualizaremos y aprovisionaremos con un servidor apache.
+De esta manera, hemos podido completar esta primera parte, por lo que a continuación, ejecutaremos un `vagrant destroy -f` lo que detendrá la VM y borrará todos sus datos, así podremos seguir con la siguiente parte, donde además de crear una VM, la actualizaremos y aprovisionaremos con un servidor apache.
 
 # Parte 2: Configurar actualización automática e implementación del servidor apache haciendo uso de Ansible.
 
