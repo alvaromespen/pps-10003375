@@ -5,7 +5,7 @@ En esta parte, vamos a realizar una monitorización en una infraestructura con d
 - Ubuntu Server tiene instalado Prometheus y node_exporter.
 - Ubuntu Cliente tiene instalado Grafana para la monitorización y el dashboard de node_exporter.
 
-#Ubuntu Server
+# Ubuntu Server
 
 A continuación, vamos a ver lo que ser ha realizado por partes, empezando por el Ubuntu Server:
 
