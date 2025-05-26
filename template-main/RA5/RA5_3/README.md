@@ -10,10 +10,10 @@ En esta primera fase, procedemos a implementar el stack básico siguiendo un rep
 
 Validaremos la correcta instalación y configuración de Prometheus y Grafana, incluyendo las métricas iniciales locales y el funcionamiento general del entorno.
 
-[Parte 1: Validación del Stack de Monitorización](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/RA5_3_1/README.md)
+[Parte 1: Validación del Stack de Monitorización](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/RA5_3_1/)
 
 **Parte 2: Monitorización de Infraestructura Real**
 
 Aquí llevaremos a cabo la creación de un entorno de monitorización adaptado a una infraestructura compuesta por dos máquinas: un servidor Ubuntu que expone métricas mediante Node Exporter y un cliente Ubuntu que actúa como plataforma de visualización mediante Grafana. Este escenario simula una monitorización real en red.
 
-[Parte 2: Monitorización de Infraestructura Real](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/RA5_3_2/README.md)
+[Parte 2: Monitorización de Infraestructura Real](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/RA5_3_2/)
