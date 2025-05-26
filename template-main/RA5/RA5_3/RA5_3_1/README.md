@@ -43,3 +43,5 @@ Para código 500 error:
 **Grafana:**
 
 ![I8](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/8.png)
+
+Habiendo realizado todo lo anterior haciendo uso de Dockers, hemos podido validar tanto la instalación de todo el stack como el funcionamiento de todos sus elementos, habiendo completado así esta primera parte. 
