@@ -19,3 +19,27 @@ Tras realizar el docker compose build, deberíamos realizar una pequeña modific
 Y como podemos observar ya funciona el compose up.
 
 ![I3](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/3.png)
+
+Una vez realizado todo esto, ya tendremos todo el stack funcional como veremos a continuación:
+
+**Node:**
+
+Para código 200:
+
+![I4](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/4.png)
+
+Para código 500 error:
+
+![I5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/5.png)
+
+**Prometheus:**
+
+![I6](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/6.png)
+
+**cAdvisor:**
+
+![I7](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/7.png)
+
+**Grafana:**
+
+![I8](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/8.png)
