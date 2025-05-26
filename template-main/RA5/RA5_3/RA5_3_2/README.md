@@ -28,4 +28,13 @@ Tras esto, habilitamos y corremos el servicio y si ejecutamos el curl desde loca
 
 Para proceder con este punto tenemos que instalar Prometheus, haciendo el mismo procedimiento que con el Ubuntu Server con node_exporter, donde lo primero que haremos será ejecutar lo siguiente el wget para poder instalar el Prometheus --> ```wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz```, también hemos creado el usuario prometheus y hemos aplicado los permisos 600 a los directorios /etc/prometheus/ y /var/lib/prometheus/ y con chown hemos cambiado el usuario propietario.
 
+Tras eso, hemos configurado el fichero .yml de la siguiente manera:
+
+![I15](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/15.png)
+
+Donde hemos configurado el target para que apunte a la .101, que es la IP del servidor.
+
+Y también hemos configurado el prometheus.service, donde hemos añadido las siguientes líneas para poder habilitar el servicio de prometheus.
+
+![I16](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/16.png)
 
