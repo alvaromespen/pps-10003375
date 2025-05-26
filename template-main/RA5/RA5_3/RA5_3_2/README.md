@@ -50,3 +50,18 @@ sudo add-apt-repository "deb https://apt.grafana.com stable main"
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 sudo apt update
 ```
+
+Tras eso, instalamos el servicio Grafana, haciendo un apt install grafana, y tras instalarlo, podemos acceder al servicio de Grafana de manera gráfica.
+
+![I19](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/19.png)
+
+Una vez dentro de la interfaz, vamos a ir a la parte de la izquierda al apartado de Data Sources, y le daremos a añadir uno nuevo, para poder añadirlo como fuente de datos, donde en el apartado de URL introduciremos nuestra localhost con el puerto 9090, y tras eso lo guardamos.
+
+![I20](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/20.png)
+
+Finalmente, importamos la dashboard, e introducimos la fuente de datos Prometheus, y finalmente podremos ver el panel completo con las métrcias del servidor siendo moniotrizadas.
+
+![I21](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/21.png)
+![I22](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/22.png)
+
+De esta manera, tenemos el servidor siendo monitorizado haciendo uso de Grafana desde nuestro equipo cliente.
