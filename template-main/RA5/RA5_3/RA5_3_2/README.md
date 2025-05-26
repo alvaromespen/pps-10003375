@@ -34,7 +34,19 @@ Tras eso, hemos configurado el fichero .yml de la siguiente manera:
 
 Donde hemos configurado el target para que apunte a la .101, que es la IP del servidor.
 
-Y también hemos configurado el prometheus.service, donde hemos añadido las siguientes líneas para poder habilitar el servicio de prometheus.
+Y también hemos configurado el prometheus.service, donde hemos añadido las siguientes líneas para poder habilitar el servicio de prometheus. Su función general es iniciar Prometheus automáticamente al arrancar el sistema, una vez que la red esté disponible. Ejecuta el binario de Prometheus como el usuario prometheus, especificando la ruta del archivo de configuración, el directorio de almacenamiento de datos de series temporales y las rutas de las plantillas web para la interfaz gráfica. 
 
 ![I16](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/16.png)
 
+Tras esto, ya podemos ver que Prometheus funciona a la perfección.
+
+![I17](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_3/Assets%20-%20Prometheus%20%26%20Grafana/17.png)
+
+Ahora tenemos que instalar Grafana, que para ello, tenemos que ejecutar lo siguiente para poder añadir el repositorio oficial a nuestro equipo:
+
+```
+sudo apt install -y software-properties-common
+sudo add-apt-repository "deb https://apt.grafana.com stable main"
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+sudo apt update
+```
