@@ -9,5 +9,5 @@ A continuación, vamos a ver lo que ser ha realizado por partes, empezando por e
 
 Lo primero que vamos a hacer es instalar el node_exporter en el servidor, este es un componente de monitorización para Prometheus que se encarga de exportar métricas del sistema operativo (host) en el que se ejecuta.
 
-Haciendo uso de wget ```bash wget https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_exporter-1.8.0.linux-amd64.tar.gz```
+Haciendo uso de wget ```wget https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_exporter-1.8.0.linux-amd64.tar.gz```
 , obtenemos la herramienta de node_exporter comprimida en .tar.gz, y tras
