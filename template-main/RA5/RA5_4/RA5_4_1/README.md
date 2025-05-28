@@ -22,8 +22,10 @@ Una vez creado este fichero, lo aplicaremos, y verificaremos su funcionamiendo, 
 
 Ahora que ya están desplegadas las dos réplicas de NGINX, vamos a descargar e instalar K9s, haciendo uso de curl, una vez en nuestro equipo instaaldo, tendremos que volver a exportar el KUBECONFIG, y finalmente, podremos observar que si ejecutamos K9s, veremos de manera gráfica los dos nodos.
 
-![I4](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4.png)
+(A partir de esta parte, realizamos la configuración de K9s a través de SSH, a eso se debe el cambio de terminal.)
 
-![I4-5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4-5.png)
+![I4](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4.PNG)
 
-![I5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/5.png)
+![I4-5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4-5.PNG)
+
+![I5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/5.PNG)
