@@ -19,3 +19,11 @@ Una vez hecho eso, procederemos a configurar el .yaml poder desplegar una aplica
 Una vez creado este fichero, lo aplicaremos, y verificaremos su funcionamiendo, viendo los pods creados por ejemplo, o realizando un curl al puerto establecido.
 
 ![I3](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/3.png)
+
+Ahora que ya están desplegadas las dos réplicas de NGINX, vamos a descargar e instalar K9s, haciendo uso de curl, una vez en nuestro equipo instaaldo, tendremos que volver a exportar el KUBECONFIG, y finalmente, podremos observar que si ejecutamos K9s, veremos de manera gráfica los dos nodos.
+
+![I4](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4.png)
+
+![I4-5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4-5.png)
+
+![I5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/5.png)
