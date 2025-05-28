@@ -20,12 +20,14 @@ Una vez creado este fichero, lo aplicaremos, y verificaremos su funcionamiendo, 
 
 ![I3](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/3.png)
 
-Ahora que ya están desplegadas las dos réplicas de NGINX, vamos a descargar e instalar K9s, haciendo uso de curl, una vez en nuestro equipo instaaldo, tendremos que volver a exportar el KUBECONFIG, y finalmente, podremos observar que si ejecutamos K9s, veremos de manera gráfica los dos nodos.
+(A partir de esta parte, realizamos la configuración de K9s a través de SSH, a eso se debe el cambio de terminal.)****
 
-(A partir de esta parte, realizamos la configuración de K9s a través de SSH, a eso se debe el cambio de terminal.)
+Ahora que ya están desplegadas las dos réplicas de NGINX, vamos a descargar e instalar K9s, haciendo uso de curl, una vez en nuestro equipo instaldo, tendremos que volver a exportar el KUBECONFIG.
 
 ![I4](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4.PNG)
 
 ![I4-5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/4-5.PNG)
+
+Finalmente, podremos observar que si ejecutamos K9s, interfaz de usuario basada en terminal (TUI) para Kubernetes que te permite interactuar con tu clúster de forma rápida y visual, sin tener que escribir constantemente comandos kubectl.
 
 ![I5](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/5.PNG)
