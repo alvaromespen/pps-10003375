@@ -8,7 +8,7 @@ Hemos dividido la actividad en 3 partes.
 
 **Parte 1: Instalación y despliegue en modo Single-Node**
 
-En esta parte, nuestro propósito ese lograr la instalación funcional de un clúster K3s en modo single-node, comprendiendo los pasos básicos de despliegue, configuración y validación de servicios en un entorno sencillo. 
+En esta parte, nuestro propósito es lograr la instalación funcional de un clúster K3s en modo single-node, comprendiendo los pasos básicos de despliegue, configuración y validación de servicios en un entorno sencillo. 
 
 [Instalación y despliegue en modo Single-Node](https://github.com/alvaromespen/pps-10003375/tree/main/template-main/RA5/RA5_4/RA5_4_1)
 
