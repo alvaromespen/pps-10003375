@@ -19,6 +19,7 @@ A continuación, para configurar los siguientes nodos en las otras dos VM para c
 Una vez con el token, accedemos a las otras VMs, y ejecutamos lo siguiente, para instalar K3s, y especificamos el servidor a través de la IP, como además, a través del tokén.
 
 ![I8](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/8.PNG)
+
 ![I9](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/9.PNG)
 
 A continuación, para verificar su buen funcionamiento podemos hacer uso del comando ```k3s kubectl get nodes```, de esta manera, obtenemos el resultado de todos los nodos del clúster registrados, y vemos en NAME, el nombre de cada VM en las que se encuentran los nodos Readys.
