@@ -4,7 +4,7 @@ A lo largo de la siguiente parte de la práctica veremos cómo realizar la insta
 
 Implementaremos un servicio nginx con 2 réplicas con HA, lo que nos permitirá comprobar tanto la correcta distribución de la carga como la tolerancia a fallos dentro del clúster. Además, utilizaremos K9s para supervisar el estado de los recursos y facilitar la gestión visual en tiempo real del entorno Kubernetes.
 
-**Parte 2: Instalación y despliegue en modo High Availability (HA)**
+# Parte 2: Instalación y despliegue en modo High Availability (HA)
 
 En este caso, lo primero que vamos a realizar es crear el nodo principal del clúster en modo HA con K3s, y esto lo hacemos gracias a través del siguiente comando:
 
