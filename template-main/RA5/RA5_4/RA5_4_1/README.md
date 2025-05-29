@@ -8,7 +8,7 @@ Ademas, añadiremos a este trabajo  la instalación de K9s, una herramienta basa
 
 # RA5_4_1: Instalación y despliegue en modo Single-Node
 
-Lo primero que debemos realizar es instalar K3s, para ello, hacemos uso del comando de instalación rápida, una vez instalado, podemos verificar su funcionamiento con ```k3s kubectl get nodes```, y tras comprobar su funcionamiento, exportamos el kubeconfig para poder hacer uso de kubectl directamente:
+Lo primero que debemos realizar es instalar K3s, para ello, hacemos uso del comando de instalación rápida, una vez instalado, podemos verificar su funcionamiento con ```k3s kubectl get nodes```, y tras comprobar su funcionamiento, exportamos el kubeconfig para poder hacer uso de kubectl directamente, a continuación, veremos los pasos detallados de como realizarlo todo:
 
 ![I1](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/1.png)
 
