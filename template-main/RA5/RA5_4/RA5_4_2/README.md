@@ -29,4 +29,5 @@ A continuación, para verificar su buen funcionamiento podemos hacer uso del com
 Lo siguiente que tenemos que hacer, es visualizarlo a través de K9s, no obstante, nos generaba un error de permisos, y tras investigar, la solución a este problema era crearun directorio oculto en nuestro directorio personal, y añadir el k3s.yaml, modificar los permisos y exportar la KUBECONFIG a ese directorio también, y tras realizar eso, ya podemos ver los nodos a través de K9s.
 
 ![I10-11](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/10-11.PNG)
+
 ![I11](https://github.com/alvaromespen/pps-10003375/blob/main/template-main/RA5/RA5_4/Assets/11.PNG)
